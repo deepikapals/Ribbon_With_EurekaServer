@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: lab-5-sentence
+server:
+  port: 8020
+  
+ribbon:
+  eureka:
+    enabled: true 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka
+  instance:
+    preferIpAddress: true
+  
+    
+words: boat,book,vote,seat,backpack,partition,groundhog
